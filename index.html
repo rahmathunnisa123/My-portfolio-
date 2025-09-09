@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahmathunnisa A - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #000, #111);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: cyan;
+    }
+    header p {
+      margin: 5px 0 15px;
+      color: #ccc;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #0af;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    }
+    h2 { color: cyan; text-align: center; }
+    .skills, .hobbies, .education {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .tag {
+      background: #222;
+      padding: 6px 14px;
+      border-radius: 12px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: white;
+    }
+    button {
+      background: cyan;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rahmathunnisa A</h1>
+    <p>BCA Department | MMES Women's Arts & Science College, Melvisharam</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Rahmathunnisa A</strong>, a BCA student at <em>MMES Women's Arts and Science College, Melvisharam</em>.  
+    I am passionate about web development, creating user-friendly designs, and exploring new technologies. I also love painting, writing, and reading in my free time.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <span class="tag">BCA - MMES Women's Arts and Science College, Melvisharam</span>
+      <span class="tag">Currently Pursuing</span>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Python</span>
+      <span class="tag">Responsive Design</span>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies">
+      <span class="tag">Painting</span>
+      <span class="tag">Drawing</span>
+      <span class="tag">Reading</span>
+      <span class="tag">Writing</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Rahmathunnisa A — MMES Women's Arts & Science College, Melvisharam
+  </footer>
+
+  <script>
+    // Show current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Thank you, " + document.getElementById('name').value + "! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
